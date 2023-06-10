@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Signup {
+    width: 100%;
+    height: auto;
+    background-color: #5D5FEF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 100px 0;
+}
+
+.Signup_logo {
+    margin-bottom: 30px;
+}
+
+.Signup_header {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.arrow_left {
+    position: absolute;
+    border: none;
+    padding: 5px;
+    border-radius: 24px;
+    height: 33px;
+    top: 40px;
+    left: 30px;
+    color: #5c5b5b;
+    transition: 0.5s;
+}
+.arrow_left:hover{
+    background-color: #5D5FEF;
+    color: #fff;
+}

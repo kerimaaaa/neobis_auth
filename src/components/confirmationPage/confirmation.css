@@ -1,0 +1,42 @@
+.confirm_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(3px); 
+    padding: 15px 0;
+    border: solid 1px  #7e7e7e;
+}
+
+.confirm_btn {
+    cursor: pointer;
+    padding: 12px;
+    width: 220px;
+    border-radius: 8px;
+    border: none;
+    background-color: #F7F7F8;
+    color: #7e7e7e;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.confirm_page_content {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.confirm_btn:hover {
+    background-color: #4545f3;
+    color: #fff;
+}
+
+.confirm_btn:disabled {
+    opacity: 0.35;
+}
