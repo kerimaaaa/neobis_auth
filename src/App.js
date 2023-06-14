@@ -19,6 +19,7 @@ function App() {
           <Route path="/additionalInfo" element={<AdditionalInfo />} />
           <Route path="/resetPassword" element={<ResetPassword />} />
           <Route path="/confirmation" element={<ConfirmationPage />} />
+          <Route path="/register/email/verify?:token" element={<VerificationPage />} />
 
 
 

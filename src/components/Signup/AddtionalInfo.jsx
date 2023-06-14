@@ -2,12 +2,12 @@ import { useFormik } from "formik";
 import { basicSchema } from "../../schemas/schema";
 import smile from '../../smile.svg';
 import '../../style.css';
-import { getApi } from '../../API/api';
+//import { getApi } from '../../API/api';
 
 
 
 const onSubmit = (data) => {
-  getApi.registerAddinfo(data).then(() => {
+  registerAddinfo(data).then(() => {
   console.log(data)})
 }
 

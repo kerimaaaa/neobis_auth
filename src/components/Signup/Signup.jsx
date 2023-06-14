@@ -7,9 +7,7 @@ import '../../style.css';
 import smile from '../../smile.svg';
 import { ArrowLongLeftIcon } from '@heroicons/react/24/solid';
 import ConfirmationPage from '../confirmationPage/confirmationPage';
-import { getApi } from '../../API/api';
-import axios from 'axios';
-
+import {instance} from '../../API/api';
 
 
 
@@ -24,22 +22,15 @@ const Signup = () => {
         }
       }, [])
 
-    const api = axios.create({
-        baseURL: "http://35.242.202.126/api",
-        headers: {
-            "content-type": "application/json",
-        }
-    })
+   
 
     const onSubmit = async (data) => {
-        api.post('/register/email/', {
+        instance.post('/register/email/', {
             "email" : data.email
         }).then(data => setUser(data))
             .catch(error => console.log(error))
         localStorage.setItem('user', JSON.stringify(data))
-        if(data.ok){
-            return '/register/'
-        }
+        
     }
 
 
